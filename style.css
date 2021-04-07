@@ -30,42 +30,96 @@ body {
     background-color: var(--main-color-dark);
   }
 
+  header {
+    padding: 0.5em 0;
+    position: relative;
+  }
+
+  header::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+
+  .navbar_logo {
+  }
+
   .navbar {
-    padding: 0;
-    margin: 0;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    top: 100%;
+
+    right: 0;
+    left: 0;
+    position: absolute;
+    background-color: var(--main-color-dark);
+    clip-path: circle(0px at bottom);
+    transition: clip-path ease-in-out 700ms;
+  }
+
+  .navbar_open {
+    clip-path: circle(150% at bottom);
   }
 
   .navbar_list {
-    height: 80%;
-    padding: 0;
     margin: 0;
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    padding: 0;
+    list-style: none;
+    text-align: center;
   }
 
   .navbar_list_item_link {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-decoration: none;
     color: var(--main-color-light);
+    background-color: var(--main-color-dark);
+    display: block;
+    padding-bottom: 24px;
   }
 
   .nabvar_list_item_img {
-    padding: 4px;
+    margin: 0;
+    padding: 0;
   }
 
-  .navbar_list_item_link > span {
+  .nabvar_list_item_img > img {
+    size: 40px;
+  }
+
+  .navbar_list_item_link > p {
     font-family: "Poppins", sans-serif;
-    font-size: 12px;
-    margin-top: 4px;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .menu-toggle {
+    padding: 1em;
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+  }
+  .menu-open .hamburger {
+    transform: rotate(45deg);
+  }
+  .menu-open .hamburger::before {
+    opacity: 0;
+  }
+  .menu-open .hamburger::after {
+    transform: translateY(-3px) rotate(-90deg);
+  }
+  .hamburger,
+  .hamburger::after,
+  .hamburger::before {
+    content: "";
+    display: block;
+    background: var(--main-color-light);
+    height: 3px;
+    width: 1.75em;
+    border-radius: 3px;
+    transition: all ease-in-out 500ms;
+  }
+  .hamburger::before {
+    transform: translateY(-8px);
+  }
+  .hamburger::after {
+    transform: translateY(5px);
   }
 
   /* HOME SECTION */
