@@ -11,75 +11,84 @@
 
   <body>
     <header>
-      <img
-        src="./assets/images/logo_gorilla40px.svg"
-        alt="Gorilla"
-        class="navbar_logo"
-      />
-
-      <nav class="navbar" id="navbar">
-        <ul class="navbar_list">
-          <li class="navbar_list_item">
-            <a href="#home-content" class="navbar_list_item_link">
-              <div class="nabvar_list_item_img">
-                <img
-                  src="./assets/icons/Home.svg"
-                  alt="Home"
-                />
-              </div>
-              <p>Inicio</p>
-            </a>
-          </li>
-          <li class="navbar_list_item">
-            <a href="#team-content" class="navbar_list_item_link">
-              <div class="nabvar_list_item_img">
-                <img
-                  src="./assets/icons/Team.svg"
-                  alt="Equipo"
-                />
-              </div>
-            </div>
-              <p>Equipo</p>
-            </a>
-          </li>
-          <li class="navbar_list_item">     
-            <a href="#skills-content" class="navbar_list_item_link">
-              <div class="nabvar_list_item_img">
-                <img
-                  src="./assets/icons/Skill.svg"
-                  alt="Habilidades"
-                />
-              </div>
-              <p>Habilidades</p>
-            </a>
-          </li>
-          <li class="navbar_list_item">
-            <a href="#portfolio-content" class="navbar_list_item_link">
-              <div class="nabvar_list_item_img">
-                <img
-                src="./assets/icons/Portfolio.svg"
-                alt="Portfolio"
-              />
-              </div>
-              <p>Portfolio</p>
-            </a>
-          </li>
-          <li class="navbar_list_item">
-            
-            <a href="#contact-content" class="navbar_list_item_link">
-              <div class="nabvar_list_item_img">
-                <img
-                src="./assets/icons/Mail.svg"
-                alt="Contacto"
-              />
-              </div>
-              <p>Contacto</p>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <div id="menu-toggle" class="menu-toggle" onclick="cambiarClase()">
-        <div class="hamburger"></div>
+      <div class="navbar_container">
+        <img
+          src="./assets/images/logo_gorilla40px.svg"
+          alt="Gorilla"
+          class="navbar_logo"
+        />
+        <nav class="navbar" id="navbar">
+          <ul class="navbar_list">
+            <li class="navbar_list_item">
+              <a
+                href="#home-content"
+                class="navbar_list_item_link"
+                id="navbar_list_item_link"
+                onclick="eliminarClase()"
+              >
+                <div class="nabvar_list_item_img">
+                  <img src="./assets/icons/Home.svg" alt="Home" />
+                </div>
+                <p>Inicio</p>
+              </a>
+            </li>
+            <li class="navbar_list_item">
+              <a
+                href="#team-content"
+                id="navbar_list_item_link"
+                class="navbar_list_item_link"
+                onclick="eliminarClase()"
+              >
+                <div class="nabvar_list_item_img">
+                  <img src="./assets/icons/Team.svg" alt="Equipo" />
+                </div>
+                <p>Equipo</p>
+              </a>
+            </li>
+            <li class="navbar_list_item">
+              <a
+                href="#skills-content"
+                class="navbar_list_item_link"
+                id="navbar_list_item_link"
+                onclick="eliminarClase()"
+              >
+                <div class="nabvar_list_item_img">
+                  <img src="./assets/icons/Skill.svg" alt="Habilidades" />
+                </div>
+                <p>Habilidades</p>
+              </a>
+            </li>
+            <li class="navbar_list_item">
+              <a
+                href="#portfolio-content"
+                class="navbar_list_item_link"
+                id="navbar_list_item_link"
+                onclick="eliminarClase()"
+              >
+                <div class="nabvar_list_item_img">
+                  <img src="./assets/icons/Portfolio.svg" alt="Portfolio" />
+                </div>
+                <p>Portfolio</p>
+              </a>
+            </li>
+            <li class="navbar_list_item">
+              <a
+                href="#contact-content"
+                class="navbar_list_item_link"
+                id="navbar_list_item_link"
+                onclick="eliminarClase()"
+              >
+                <div class="nabvar_list_item_img">
+                  <img src="./assets/icons/Mail.svg" alt="Contacto" />
+                </div>
+                <p>Contacto</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div id="menu-toggle" class="menu-toggle" onclick="cambiarClase()">
+          <div class="hamburger"></div>
+        </div>
       </div>
     </header>
     <section id="home-content">
