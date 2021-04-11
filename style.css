@@ -49,9 +49,20 @@ body {
   }
 
   .navbar_logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar_logo > img {
+    padding-top: 8px;
   }
 
   .navbar {
+    margin-top: 30%;
+    padding-top: 64px;
+    border-radius: 50px 50px 0% 0;
+    border: 1px solid var(--main-color-gray);
+    height: 100vh;
     top: 100%;
     right: 0;
     left: 0;
