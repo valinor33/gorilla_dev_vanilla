@@ -87,12 +87,7 @@ body {
     color: var(--main-color-light);
     background-color: var(--main-color-dark);
     display: block;
-    padding-bottom: 24px;
-  }
-
-  .nabvar_list_item_img {
-    margin: 0;
-    padding: 0;
+    margin-bottom: 24px;
   }
 
   .nabvar_list_item_img > img {
