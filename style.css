@@ -454,7 +454,6 @@ body {
     grid-template-rows: 125px auto;
     width: 100%;
     height: 100%;
-    background-color: var(--main-color-dark);
   }
 
   header {
@@ -464,9 +463,9 @@ body {
 
   .navbar_container {
     display: grid;
+    background-color: var(--main-color-dark);
     grid-template-columns: 125px auto;
-    grid-template-rows: 125px;
-    height: 100%;
+    height: 125px;
     position: fixed;
     z-index: 2;
     width: 100%;
@@ -482,6 +481,10 @@ body {
   }
 
   .navbar_logo > img {
+    display: none;
+  }
+
+  .menu-toggle {
     display: none;
   }
 
@@ -546,7 +549,7 @@ body {
     font-family: "Poppins", sans-serif;
     text-align: center;
     font-size: 14px;
-    padding-bottom: 12px;
+    padding: 12px 0;
   }
 
   .sidebar {
@@ -556,7 +559,7 @@ body {
     height: 100vh;
     z-index: 1;
     position: fixed;
-    border-right: 1px solid var(--main-color-light);
+    /* border-right: 1px solid var(--main-color-light); */
   }
 
   .side_links {
@@ -574,11 +577,90 @@ body {
     height: auto;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 24px;
+    column-gap: 24px;
   }
+
+  /* SECTIONS */
 
   .main > section {
     grid-column: 1 / 13;
-    height: 900px;
+    min-height: 100vh;
+  }
+
+  #home-content {
+    background: url("./assets/images/background-home.jpg");
+    background-size: cover;
+  }
+  #team-content {
+    background: url("./assets/images/background-about.jpg");
+    background-size: cover;
+    border-top: 122px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(
+      135deg,
+      #005679,
+      #005b7e,
+      #00698d,
+      #007da0,
+      #0094b6,
+      #00adc9,
+      #00c3da,
+      #00d2e4,
+      #05d8e8
+    );
+  }
+  #skills-content {
+    background: url("./assets/images/background-skills.jpg");
+    background-size: cover;
+    border-top: 122px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(
+      135deg,
+      #005679,
+      #005b7e,
+      #00698d,
+      #007da0,
+      #0094b6,
+      #00adc9,
+      #00c3da,
+      #00d2e4,
+      #05d8e8
+    );
+  }
+  #portfolio-content {
+    background: url("./assets/images/background-portfolio.jpg");
+    background-size: cover;
+    border-top: 122px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(
+      135deg,
+      #005679,
+      #005b7e,
+      #00698d,
+      #007da0,
+      #0094b6,
+      #00adc9,
+      #00c3da,
+      #00d2e4,
+      #05d8e8
+    );
+  }
+  #contact-content {
+    background: url("./assets/images/background-contact.jpg") no-repeat;
+    background-size: cover;
+    border-top: 122px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(
+      135deg,
+      #005679,
+      #005b7e,
+      #00698d,
+      #007da0,
+      #0094b6,
+      #00adc9,
+      #00c3da,
+      #00d2e4,
+      #05d8e8
+    );
   }
 } ;

@@ -12,7 +12,7 @@
   <body>
     <div class="container">
       <header>
-        <div class="navbar_container">
+        <div class="navbar_container" id="navbar_container">
           <div class="navbar_logo">
             <img src="./assets/images/logo_gorilla40px.svg" alt="Gorilla" />
           </div>
@@ -20,7 +20,7 @@
             <ul class="navbar_list">
               <li class="navbar_list_item">
                 <a
-                  href="#home-content"
+                  href="#"
                   class="navbar_list_item_link"
                   id="navbar_list_item_link"
                   onclick="eliminarClase()"
@@ -267,6 +267,17 @@
         siteNav.classList.toggle("navbar_open");
         let menuOpen = document.getElementById("menu-toggle");
         menuOpen.classList.toggle("menu-open");
+      }
+
+      function navBarColorChange() {
+        if (
+          window.document.body.scrollTop > 125 ||
+          window.document.documentElement.scrollTop > 125
+        ) {
+          console.log("Entró");
+          /* let background = document.getElementById("navbar_container");
+          background.style.backgroundColor = "transparent"; */
+        }
       }
     </script>
   </body>
