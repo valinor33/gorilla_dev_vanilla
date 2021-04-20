@@ -575,9 +575,6 @@ body {
   .main {
     grid-column: 2 / 14;
     height: auto;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    column-gap: 24px;
   }
 
   /* SECTIONS */
@@ -662,5 +659,43 @@ body {
       #00d2e4,
       #05d8e8
     );
+  }
+
+  /* HOME SECTION */
+
+  #home-content {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+  }
+
+  .home_container {
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .home_container > img {
+    display: none;
+  }
+
+  .home_title {
+    color: var(--main-color-blue-light);
+    font-weight: 400;
+    font-size: 36px;
+    text-transform: lowercase;
+    position: relative;
+  }
+
+  .home_title::before {
+    content: "Hola, somos Gorilla Dev,";
+    color: var(--main-color-light);
+    text-transform: none;
+  }
+
+  /* TEAM SECTION */
+
+  #team-content {
   }
 } ;
