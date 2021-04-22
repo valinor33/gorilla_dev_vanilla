@@ -997,8 +997,8 @@ body {
     font-size: 18px;
     color: var(--main-color-dark);
     background-color: var(--main-color-blue-light);
-    width: 90%;
-    padding: 8px 12px;
+    width: 40%;
+    padding: 12px 12px;
     border-radius: 36px;
     border: none;
     margin: 0 auto;
