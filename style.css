@@ -722,7 +722,8 @@ body {
 
   .team_container,
   .skills_container,
-  .portfolio_container {
+  .portfolio_container,
+  .contact_container {
     display: grid;
     overflow: hidden;
     grid-template-columns: repeat(8, 1fr);
@@ -913,7 +914,7 @@ body {
     margin: 0;
     font-size: 24px;
     font-weight: 400;
-    color: var(--main-color-light);
+    color: var(--main-color-blue-light);
   }
 
   .portfolio_works {
@@ -951,5 +952,55 @@ body {
   .portfolio_works_img:hover {
     transform: translateX(-10px) translateY(10px);
     box-shadow: 20px -20px 0 var(--main-color-blue-light);
+  }
+
+  /* CONTACT SECTION */
+  .contact_container > h2 {
+    grid-column: 3 / 6;
+    grid-row: 2 / 3;
+    font-size: 48px;
+    font-weight: 400;
+    color: var(--main-color-light);
+    padding: 0;
+  }
+
+  .contact_container > form {
+    grid-column: 3 / 7;
+    grid-row: 3 / 8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .contact_container > form > label {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--main-color-light);
+  }
+
+  .contact_container > form > input {
+    height: 48px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid var(--main-color-light);
+  }
+
+  .contact_container > form > textarea {
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid var(--main-color-light);
+  }
+
+  .form_submit {
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--main-color-dark);
+    background-color: var(--main-color-blue-light);
+    width: 90%;
+    padding: 8px 12px;
+    border-radius: 36px;
+    border: none;
+    margin: 0 auto;
   }
 } ;
